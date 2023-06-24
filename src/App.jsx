@@ -3,6 +3,7 @@ import React from 'react'
 import { Routes, Route} from "react-router-dom"
 import Footer from './components/common/footer/Footer'
 import NavBar from './components/common/navBar/NavBar'
+import Productos from './components/common/productos/Productos'
 import Home from './components/pages/home/Home'
 import Nosotros from './components/pages/nosotros/Nosotros'
 import Soporte from './components/pages/soporte/Soporte'
@@ -17,6 +18,7 @@ const App = () => {
      <Route path='/home' element={ <Home/> } />
      <Route path='/nosotros' element={ <Nosotros/> } />
      <Route path='/soporte' element={ <Soporte/> } />
+     <Route path='/productos' element={ <Productos/> } />
     </Routes>
      </Container> 
      <Footer/> 
