@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function Productos(props) {
    
@@ -28,7 +29,7 @@ export default function Productos(props) {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            más info
+            <Link to={ `/productos/:${props.id}`}> mas info </Link>
           </Button>
         </CardActions>
       </Card>

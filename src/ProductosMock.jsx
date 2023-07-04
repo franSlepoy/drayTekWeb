@@ -1,7 +1,4 @@
-import React from 'react'
-import Productos from '../../common/productos/Productos'
-
-const arrayProductos = [
+export const arrayProductos = [
     {
         id: 1,
         titulo: "Vigor 2915 series",
@@ -39,17 +36,3 @@ const arrayProductos = [
         descripcion: "VigorAP 912C is a ceiling-mount wireless access point for business networks. It has a capacity of up to 256 concurrent active users, ideal for a high-density environment such as a BYOD workplace. The low-profile appearance and PoE power supply provide the flexibility in deployment."
     },
 ]
-
-const Home = () => {
-    
-  return (
-    
-    <>
-   {
-    arrayProductos.map((producto)=> <Productos key={producto.id} titulo={producto.titulo} imagen={producto.imagen} descripcion={producto.descripcion} id={producto.id} /> )
-   }
-  </>
-   );
-};
-
-export default Home
