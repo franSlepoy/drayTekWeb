@@ -10,7 +10,7 @@ export default function Productos(props) {
    
     return (
     
-        <Card sx={{ maxWidth: 300, margin:5 }}>
+        <Card key={props.id} sx={{ maxWidth: 300, margin:5 }}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -29,7 +29,7 @@ export default function Productos(props) {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link to={ `/productos/:${props.id}`}> mas info </Link>
+            <Link to={ `/productos/${props.id}`}> mas info </Link>
           </Button>
         </CardActions>
       </Card>

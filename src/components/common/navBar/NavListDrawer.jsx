@@ -25,7 +25,7 @@ export default function NavListDrawer() {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href="mailto:info@draytek.com.ar">
               <ListItemIcon>
                 <DraftsIcon />
               </ListItemIcon>

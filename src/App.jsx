@@ -7,6 +7,7 @@ import Productos from './components/common/productos/Productos'
 import Detalle from './components/pages/detalle/Detalle'
 import Home from './components/pages/home/Home'
 import Nosotros from './components/pages/nosotros/Nosotros'
+import PaginaProductos from './components/pages/paginaProductos/PaginaProductos'
 import Soporte from './components/pages/soporte/Soporte'
 
 
@@ -17,6 +18,7 @@ const App = () => {
      <Container sx={{ mt:10 , display: 'flex', flexWrap:"wrap"}}>
      <Routes>
      <Route path='/' element={ <Home/> } />
+     <Route path='/productos' element={ <PaginaProductos/> } />
      <Route path='/productos/:id' element={ <Detalle/> } />
      
      <Route path='/nosotros' element={ <Nosotros/> } />

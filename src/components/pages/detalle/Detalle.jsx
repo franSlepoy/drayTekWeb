@@ -9,9 +9,10 @@ import { arrayProductos } from '../../../ProductosMock';
 
 export default function Detalle() {
     let { id } = useParams()
-
-    let productoSeleccionado = arrayProductos.find( producto => producto.id === producto.id)
    
+
+    let productoSeleccionado = arrayProductos.find( producto => producto.id === id)
+    console.log(productoSeleccionado)
 
   return (
     <Box sx={{display:"flex", justifyContent:"center", ml: 46, mt: 5, mb:10}}>
