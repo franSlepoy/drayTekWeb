@@ -1,5 +1,4 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
-import { display } from '@mui/system'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { arrayProductos } from '../../../ProductosMock'
@@ -29,7 +28,7 @@ const PaginaProductos = () => {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link to={ `/productos/${producto.id}`}> mas info </Link>
+            <Link to={ `/productos/${producto.id}`}> mas info de {producto.titulo} </Link>
           </Button>
         </CardActions>
       </Card>
