@@ -14,23 +14,24 @@ export default function Productos(props) {
         <CardActionArea>
           <CardMedia
             component="img"
-            height="140"
+            height="250"
             image= {props.imagen}
             alt=""
           />
-          <CardContent>
+          
+<CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {props.titulo}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-             jftdtjfyk
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            <Link > mas info </Link>
-          </Button>
+        <Link>
+            <Button size="small" color="primary" variant="contained" sx={{textDecoration:"inherit"}} >
+             más info
+            </Button>
+        </Link>
+
         </CardActions>
       </Card>
     );
