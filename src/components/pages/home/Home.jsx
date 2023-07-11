@@ -1,17 +1,22 @@
-import React from 'react'
-import Productos from '../../common/productos/Productos'
-import { arrayProductos } from '../../../ProductosMock';
+import React, { useState } from 'react'
+import { SeccionesData } from '../../../servidor/Secciones'; 
+import Productos from '../../common/productos/Productos';
+
 
 
 const Home = () => {
-    
+    const { secciones, setSecciones} = useState([SeccionesData])
   return (
-    
     <>
-   {
-    arrayProductos.map((producto)=> <Productos key={producto.id} titulo={producto.titulo} imagen={producto.imagen} descripcion={producto.descripcion} id={producto.id} /> )
-   }
-  </>
+   {SeccionesData.map((seccion)=> {
+    return (
+     <Productos key={seccion.id} titulo={seccion.titulo} imagen={seccion.imagen}  />
+
+    )
+   })}
+
+    </>
+  
    );
 };
 

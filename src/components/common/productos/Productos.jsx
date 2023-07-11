@@ -23,13 +23,13 @@ export default function Productos(props) {
               {props.titulo}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {props.descripcion}
+             jftdtjfyk
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link to={ `/productos/${props.id}`}> mas info </Link>
+            <Link > mas info </Link>
           </Button>
         </CardActions>
       </Card>
