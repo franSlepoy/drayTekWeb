@@ -1,4 +1,4 @@
-export const SeccionesData = [
+export const PequeñasOficinasData = [
     {id: 1,
     titulo:"Vigor 2915 Series",
     imagen: "/src/imagenes/2915ac_left_H1125.png",
