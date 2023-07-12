@@ -10,7 +10,7 @@ const Home = () => {
     <>
    {SeccionesData.map((seccion)=> {
     return (
-     <Productos key={seccion.id} titulo={seccion.titulo} imagen={seccion.imagen}  />
+     <Productos key={seccion.id} titulo={seccion.titulo} imagen={seccion.imagen} link={seccion.link}  />
 
     )
    })}

@@ -1,4 +1,4 @@
-export const PutosDeAccesoData = [
+export const PuntosDeAccesoData = [
     {id: 1,
         titulo:"Vigor AP 903",
         imagen: "/src/imagenes/AP903_left_H1125.png",

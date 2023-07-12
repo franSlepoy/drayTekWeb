@@ -6,10 +6,16 @@ import Typography from '@mui/material/Typography';
 import { Box, Button, CardActionArea, CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
 
+const linkStyle = {
+  textDecoration: 'none',
+};
+
 
 export default function DetalleCard(props) {
   return (
-    <Box  mt={8} mb={8} >
+    
+    <Box margin={"auto"}>
+      <Box  mt={8} mb={8} >
       <Card sx={{ maxWidth: 600}} >
       <CardActionArea>
         <CardMedia
@@ -28,9 +34,9 @@ export default function DetalleCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Link to={props.link}>
-        <Button size="small" color="primary">
-          Más info
+        <Link to={props.link} style={linkStyle}>
+        <Button variant="contained" size="small" color="primary">
+          link
         </Button>
         </Link>
         
@@ -38,5 +44,8 @@ export default function DetalleCard(props) {
     </Card>
 
     </Box>
+    </Box>
+    
+    
       );
 }

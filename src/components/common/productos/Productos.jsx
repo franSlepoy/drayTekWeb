@@ -6,6 +6,10 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
 
+const linkStyle = {
+  textDecoration: 'none',
+};
+
 export default function Productos(props) {
    
     return (
@@ -26,7 +30,7 @@ export default function Productos(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-        <Link>
+        <Link to={props.link} style={linkStyle} >
             <Button size="small" color="primary" variant="contained" sx={{textDecoration:"inherit"}} >
              más info
             </Button>
