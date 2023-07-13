@@ -13,7 +13,7 @@ export const SwitchesData = [
             },
     {id: 3,
             titulo:"Vigor Switch G2280x",
-            imagen: "/src/imagenes/ G2280x_left_H1125.png",
+            imagen: "/src/imagenes/G2280x_left_H1125.png",
             descripcion:"- 48 GbE ports - 6 10G fiber SFP+ - L2+ Managed - 216G Switching Capacity - 1U Rackmount",
             link: "https://www.draytek.com/products/vigorswitch-g2280x/"
             },

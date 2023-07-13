@@ -16,7 +16,7 @@ export default function DetalleCard(props) {
     
     <Box margin={"auto"}>
       <Box  mt={8} mb={8} >
-      <Card sx={{ maxWidth: 600}} >
+      <Card sx={{ maxWidth: 500}} >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -34,7 +34,7 @@ export default function DetalleCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Link to={props.link} style={linkStyle}>
+        <Link to={props.link} style={{ textDecoration: 'none' }}>
         <Button variant="contained" size="small" color="primary">
           link
         </Button>
