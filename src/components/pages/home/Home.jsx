@@ -4,11 +4,12 @@ import Productos from '../../common/productos/Productos';
 
 
 
+
 const Home = () => {
     const { secciones, setSecciones} = useState([SeccionesData])
   return (
     <>
-   {SeccionesData.map((seccion)=> {
+    {SeccionesData.map((seccion)=> {
     return (
      <Productos key={seccion.id} titulo={seccion.titulo} imagen={seccion.imagen} link={seccion.link}  />
 

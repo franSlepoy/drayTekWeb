@@ -27,7 +27,7 @@ const NavBar = () => {
       Contacto
     </Typography>
    
-    <Button sx={{margin: 3, display: { xs: "none", sm:"block"}}} color='inherit' component={NavLink} to={"/"}> Home</Button>
+    <Button sx={{margin: 3, display: { xs: "none", sm:"block"}}} color='inherit' component={NavLink} to={"/productos"}> Productos </Button>
     <Button sx={{margin: 3, display: { xs: "none", sm:"block"}}} color='inherit' component={NavLink} to={"/nosotros"} > Nosotros</Button>
     <Button sx={{margin: 3, display: { xs: "none", sm:"block"}}} color='inherit' component={NavLink} to={"/soporte"} > Soporte</Button>
     

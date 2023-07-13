@@ -34,7 +34,7 @@ export default function DetalleCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Link to={props.link} style={{ textDecoration: 'none' }}>
+        <Link to={props.link} style={{ textDecoration: 'none' }} target={"_blank"}>
         <Button variant="contained" size="small" color="primary">
           link
         </Button>

@@ -30,7 +30,7 @@ export default function Productos(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-        <Link to={props.link} style={linkStyle} >
+        <Link to={props.link} style={linkStyle}>
             <Button size="small" color="primary" variant="contained" sx={{textDecoration:"inherit"}} >
              más info
             </Button>

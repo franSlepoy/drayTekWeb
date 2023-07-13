@@ -3,6 +3,7 @@ import React from 'react'
 import { Routes, Route} from "react-router-dom"
 import Footer from './components/common/footer/Footer'
 import NavBar from './components/common/navBar/NavBar'
+import Slider from './components/common/slider/Slider'
 import Accesorios from './components/pages/accesorio/Accesorios'
 import Corporativos from './components/pages/corporativos/Corporativos'
 import Home from './components/pages/home/Home'
@@ -21,7 +22,8 @@ const App = () => {
      <NavBar/>
      <Container sx={{ mt:10 , display: 'flex', flexWrap:"wrap"}}>
      <Routes>
-     <Route path='/' element={ <Home/> } />
+     <Route path='/' element={ <Slider/> } />
+     <Route path='/productos' element={ <Home/> } />
      <Route path='/nosotros' element={ <Nosotros/> } />
      <Route path='/soporte' element={ <Soporte/> } />
      <Route path='/pequeñasOficinas' element={ <PequeñasOficinas/> } />
