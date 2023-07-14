@@ -16,7 +16,7 @@ export default function DetalleCard(props) {
     
     <Box margin={"auto"}>
       <Box  mt={8} mb={8} >
-      <Card sx={{ maxWidth: 500}} >
+      <Card sx={{ maxWidth: 500, minWidth:300}} >
       <CardActionArea>
         <CardMedia
           component="img"

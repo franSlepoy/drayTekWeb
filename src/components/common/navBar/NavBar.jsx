@@ -26,7 +26,7 @@ const NavBar = () => {
     <Typography variant='h6' sx={{flexGrow:1}}>
       Contacto
     </Typography>
-   
+    
     <Button sx={{margin: 3, display: { xs: "none", sm:"block"}}} color='inherit' component={NavLink} to={"/productos"}> Productos </Button>
     <Button sx={{margin: 3, display: { xs: "none", sm:"block"}}} color='inherit' component={NavLink} to={"/nosotros"} > Nosotros</Button>
     <Button sx={{margin: 3, display: { xs: "none", sm:"block"}}} color='inherit' component={NavLink} to={"/soporte"} > Soporte</Button>

@@ -3,7 +3,6 @@ import React from 'react'
 import { Routes, Route} from "react-router-dom"
 import Footer from './components/common/footer/Footer'
 import NavBar from './components/common/navBar/NavBar'
-import Slider from './components/common/slider/Slider'
 import Accesorios from './components/pages/accesorio/Accesorios'
 import Corporativos from './components/pages/corporativos/Corporativos'
 import Home from './components/pages/home/Home'
@@ -13,7 +12,7 @@ import PuntosDeAcceso from './components/pages/puntosDeAcceso/PuntosDeAcceso'
 import Pymes from './components/pages/pymes/Pymes'
 import Soporte from './components/pages/soporte/Soporte'
 import Switches from './components/pages/switches/Switches'
-
+import Example from './components/pages/carousel/Carousel'
 
 
 const App = () => {
@@ -22,7 +21,7 @@ const App = () => {
      <NavBar/>
      <Container sx={{ mt:10 , display: 'flex', flexWrap:"wrap"}}>
      <Routes>
-     <Route path='/' element={ <Slider/> } />
+    <Route path='/' element={ <Example/> } /> 
      <Route path='/productos' element={ <Home/> } />
      <Route path='/nosotros' element={ <Nosotros/> } />
      <Route path='/soporte' element={ <Soporte/> } />
